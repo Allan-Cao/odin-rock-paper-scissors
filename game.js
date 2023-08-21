@@ -31,3 +31,13 @@ function playRound(playerSelection, computerSelection){
             return 'Unknown player selection'
     }
 }
+
+function game(){
+    for (let i = 0; i < 5; i++) {
+        const playerSelection = prompt("Rock-Paper-Scissors: ")
+        const computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection));
+    }
+}
+
+game();
